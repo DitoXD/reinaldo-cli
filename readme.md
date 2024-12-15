@@ -30,8 +30,9 @@ Once the program has begun, use the CLI login information to gain access to the 
 
 Please use the following sample super admin account for access to the API.
 
-Username: TestAdmin
-Password: 1234TestAdmin
+### Username: TestAdmin
+
+### Password: 1234TestAdmin
 
 ## [Artifactory Repository](https://trial4p9gnn.jfrog.io)
 
