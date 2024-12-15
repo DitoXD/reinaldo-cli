@@ -294,6 +294,7 @@ async function getRepoToUpdate() {
 
 	if (choices == []) {
 		console.log("No repositories found. Returning to menu.");
+		setTimeout(menu, 5000);
 	}
 
 	await inquirer
@@ -439,10 +440,10 @@ async function getAdmin() {
 async function CreateUser() {
 	await getUsername();
 
-	await _router.PostRequest(
-		`/access/api/v2/users`,
+	await _router.PutRequest(
+		`/artifactory/api/security/users/${newUser.username}`,
 		newUser,
-		`User '${newUser.name}' created successfully:`,
+		`User '${newUser.username}' created successfully:`,
 		"Error creating user:"
 	);
 }
@@ -474,7 +475,7 @@ async function getUserToDelete() {
 
 	if (choices == []) {
 		console.log("No eligible users for deletion. Returning to menu.");
-		//go back to menu
+		setTimeout(menu, 5000);
 	}
 
 	await inquirer
