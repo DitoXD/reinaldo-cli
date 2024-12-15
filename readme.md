@@ -4,7 +4,13 @@ CompuZign CLI Take Home Project is the product of multiple interviews and dedica
 
 ## Installation
 
-Download the project and in the project folder's terminal, use npm to install the cli.
+Using JFrog Artifactory to download the project, navigate to a folder in which you would like the project zip file to be in via the terminal and use the following command.
+
+```bash
+curl -u TestAdmin:1234TestAdmin -XGET https://trial4p9gnn.jfrog.io/artifactory/reinaldo-cli-npm-local/compuzign-project.zip --output compuzign-project.zip
+```
+
+Navigate into the project folder's terminal, use npm to install the cli.
 
 ```bash
 npm install -g
@@ -31,6 +37,10 @@ Password: 1234TestAdmin
 
 Use the link to open the [Artifactory](https://trial4p9gnn.jfrog.io) via the web browser.
 
+## [Documentation](https://docs.google.com/document/d/1B7toXDDQHHDQP-SAn5ICr1HoLH7LoTRwvJUJ9J7-Y88/edit?usp=sharing)
+
+Further [documentation](https://docs.google.com/document/d/1B7toXDDQHHDQP-SAn5ICr1HoLH7LoTRwvJUJ9J7-Y88/edit?usp=sharing) in regards to the functionality and details of the application structure can be viewed.
+
 ## Sources
 
 All links used in creating this project will be listed here as follows.
@@ -42,5 +52,7 @@ All links used in creating this project will be listed here as follows.
 [Node.js Tutorials - 59 - CLI Options](https://www.youtube.com/watch?v=oIg08Z0bqsY&ab_channel=Codevolution)
 
 [Node.js Tutorial - 60 - Interactive CLI Tools](https://www.youtube.com/watch?v=sJdqdGxRbXY&t=1s&ab_channel=Codevolution)
+
+[How to upload and download artifacts using the Artifactory REST API.](https://www.youtube.com/watch?v=peSN5YroC8M&ab_channel=JFrog)
 
 [Inquirer NPM Package](https://www.npmjs.com/package/inquirer?activeTab=readme#question)
