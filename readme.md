@@ -7,7 +7,13 @@ CompuZign CLI Take Home Project is the product of multiple interviews and dedica
 Using JFrog Artifactory to download the project, navigate to a folder in which you would like the project zip file to be in via the terminal and use the following command.
 
 ```bash
-curl -u TestAdmin:1234TestAdmin -XGET https://trial4p9gnn.jfrog.io/artifactory/reinaldo-cli-npm-local/compuzign-project.zip --output compuzign-project.zip
+curl --user TestAdmin:1234TestAdmin -XGET https://trial4p9gnn.jfrog.io/artifactory/reinaldo-cli-npm-local/compuzign-project.zip --output compuzign-project.zip
+```
+
+If you are having issues where Invoke-WebRequest is throwing an error, please use the following command to disable the curl alias allowing normal curl functionality.
+
+```bash
+Remove-item alias:curl
 ```
 
 Navigate into the project folder's terminal, use npm to install the cli.
