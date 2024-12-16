@@ -16,7 +16,11 @@ If you are having issues where Invoke-WebRequest is throwing an error, please us
 Remove-item alias:curl
 ```
 
-Navigate into the project folder's terminal, use npm to install the cli.
+Navigate into the project folder's terminal, use npm to install the packages and the cli.
+
+```bash
+npm i
+```
 
 ```bash
 npm install -g
