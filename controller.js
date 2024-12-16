@@ -461,7 +461,6 @@ async function getUserToDelete() {
 	);
 
 	let count = 1;
-	userList = response.data;
 	response.data.forEach((user) => {
 		if (
 			user.realm != "oauth" &&
@@ -469,6 +468,7 @@ async function getUserToDelete() {
 			user.name != "testadmin"
 		) {
 			choices.push(count + ". " + user.name);
+			userList.push(user);
 			count++;
 		}
 	});
